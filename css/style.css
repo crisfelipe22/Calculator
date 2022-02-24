@@ -1,0 +1,177 @@
+@font-face {
+  font-family: "Spartan";
+  src: url("../font/Spartan-Bold.ttf");
+}
+@font-face {
+  font-family: "SpartanM";
+  src: url("../font/Spartan-Medium.ttf");
+}
+* {
+  font-family: "Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #2c2c2c;
+}
+
+.calc {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+@media only screen and (min-width: 1440px) {
+  .calc {
+    width: 537px;
+  }
+}
+.calcPrin {
+  display: flex;
+  flex-direction: row;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+.calcLogo {
+  flex: 1;
+}
+.calcTema {
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  flex-basis: 50px;
+  align-self: flex-end;
+}
+.calcSwitcher {
+  flex-basis: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+.calcSwitcherBtn {
+  background: none;
+  border: none;
+  font-size: 0.6rem;
+}
+.calcSwitcherBtn:hover {
+  cursor: pointer;
+}
+.calcSwitcherBtns {
+  display: flex;
+  justify-content: space-around;
+}
+.calcSwitcherSlide {
+  height: 20px;
+  border-radius: 12px;
+  padding: 2px 5px;
+  display: flex;
+  align-items: center;
+}
+.calcSwitcherSlide--1 {
+  justify-content: flex-start;
+}
+.calcSwitcherSlide--2 {
+  justify-content: center;
+}
+.calcSwitcherSlide--3 {
+  justify-content: flex-end;
+}
+.calcTheme {
+  height: 14px;
+  width: 14px;
+  border-radius: 50%;
+}
+.calcResult {
+  font-size: 2rem;
+  border-radius: 10px;
+  padding: 1.7rem;
+  text-align: right;
+  overflow-x: hidden;
+  margin-bottom: 2rem;
+}
+.calcNum {
+  font-family: "SpartanM";
+  font-size: 1.6rem;
+  border-radius: 10px;
+  padding: 1.8rem;
+  display: grid;
+  font-family: "SpartanM" !important;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20%;
+  grid-template-rows: 65px 65px 65px 65px 65px;
+  column-gap: 6.33%;
+  row-gap: 20px;
+}
+.calc .pad2 {
+  font-family: "SpartanM" !important;
+}
+.calcKey {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: gray;
+  border-radius: 6px;
+  box-shadow: 0px 4px 0px red;
+  padding-top: 8px;
+}
+.calckeyOpt {
+  background-color: #5e5b5b;
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+.calcKeyEql {
+  background-color: #8b6060;
+  grid-column: 3/span 2;
+}
+.calcKeyReset {
+  grid-column: 1/span 2;
+}
+.calcKey:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.caclTheme1 {
+  background-color: #404e72;
+  color: white;
+  transition: color 0.2s , background-color 0.2s ;
+}
+.caclTheme1 .calcSwitcherSlide {
+  background-color: #232c43;
+  transition: background-color 0.2s ;
+}
+.caclTheme1 .calcTheme {
+  background-color: #d03f2f;
+  transition: background-color 0.2s ;
+}
+.caclTheme1 .calcResult {
+  color: white;
+  background-color: #182034;
+  transition: color 0.2s , background-color 0.2s ;
+}
+.caclTheme1 .calcKey {
+  color: #444b5a;
+  background-color: #eae3dc;
+  box-shadow: #b4a597 0px 4px 0px;
+  transition: color 0.2s , background-color 0.2s , box-shadow 0.2s ;
+}
+.caclTheme1 .calckeyOpt {
+  color: white;
+  background-color: #637097;
+  box-shadow: #404e72 0px 4px 0px;
+  transition: color 0.2s , background-color 0.2s , box-shadow 0.2s ;
+}
+.caclTheme1 .calcKeyEql {
+  color: white;
+  background-color: #d03f2f;
+  box-shadow: #93261a 0px 4px 0px;
+  transition: color 0.2s , background-color 0.2s , box-shadow 0.2s ;
+}
+.caclTheme1 .calcNum {
+  background-color: #232c43;
+  transition: background-color 0.2s ;
+}
+
+body {
+  background-color: #404e72;
+}
